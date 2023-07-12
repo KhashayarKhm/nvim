@@ -1,0 +1,2 @@
+-- For see Comment.nvim remaps open this URL
+-- https://github.com/numToStr/Comment.nvim#-usage

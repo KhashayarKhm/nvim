@@ -34,4 +34,6 @@ vim.keymap.set('n', '<leader>fc', function ()
   })
 end, {})
 vim.keymap.set('n', '<leader>vh', builtin.help_tags, {})
-
+vim.keymap.set('n', '<leader>bl', function ()
+  vim.cmd('Telescope buffers')
+end)

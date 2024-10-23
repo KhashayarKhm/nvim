@@ -1,12 +1,9 @@
 vim.g.mapleader = " "
 
+-- Delete all buffer except current one
+vim.keymap.set("n", "<leader>bda", ":%bd<CR><C-o>")
+
 -- IDK!
-vim.keymap.set("n", "<leader>vwm", function()
-  require("vim-with-me").StartVimWithMe()
-end)
-vim.keymap.set("n", "<leader>svwm", function()
-  require("vim-with-me").StopVimWithMe()
-end)
 vim.keymap.set("n", "Q", "<nop>")
 
 -- Doesn't work
@@ -22,10 +19,10 @@ vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
 vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
 vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 
--- Open Explorer
-vim.keymap.set("n", "<leader>ee", vim.cmd.Ex)
-vim.keymap.set("n", "<leader>ev", vim.cmd.Vex)
-vim.keymap.set("n", "<leader>es", vim.cmd.Sex)
+-- Open Netrw Explorer
+vim.keymap.set("n", "<leader>nee", vim.cmd.Ex)
+vim.keymap.set("n", "<leader>nev", vim.cmd.Vex)
+vim.keymap.set("n", "<leader>nes", vim.cmd.Sex)
 
 -- Move lines up and down in visual mode
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
@@ -50,7 +47,7 @@ vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 
 -- Quick replace selected
-vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+vim.keymap.set("n", "<leader>r", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
 -- Source the file
 vim.keymap.set("n", "<leader><leader>", function()

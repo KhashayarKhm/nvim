@@ -26,9 +26,12 @@ vim.opt.termbidi = true
 vim.opt.cursorline = true
 vim.opt.wrap = true
 
--- vim.opt.swapfile = false
--- vim.opt.backup = false
+vim.opt.swapfile = true
+vim.opt.backup = true
+vim.opt.backupdir = os.getenv("HOME") .. "/.local/state/nvim/backup//,."
 vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+vim.opt.undofile = true
+-- vim.hidden = true
 
 vim.opt.termguicolors = true
 

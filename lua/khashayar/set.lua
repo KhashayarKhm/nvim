@@ -44,3 +44,6 @@ vim.opt.updatetime = 50
 vim.opt.colorcolumn = "100"
 
 vim.g.mapleader = " "
+
+vim.opt.list = true
+vim.opt.listchars = 'trail:·'

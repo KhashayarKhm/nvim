@@ -19,6 +19,8 @@ return require('packer').startup(function(use)
 
   use 'b0o/schemastore.nvim'
 
+  use 'stevearc/oil.nvim'
+
   -- use {
   --   'mrcjkb/haskell-tools.nvim',
   --   requires = {

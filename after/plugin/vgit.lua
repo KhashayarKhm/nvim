@@ -133,7 +133,7 @@ require('vgit').setup({
     scene = {
       diff_preference = 'unified', -- unified or split
       keymaps = {
-        quit = 'q'
+        quit = 'Q'
       }
     },
     diff_preview = {

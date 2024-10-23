@@ -21,6 +21,13 @@ return require('packer').startup(function(use)
 
   use 'stevearc/oil.nvim'
 
+  use {
+    'nvim-tree/nvim-tree.lua',
+    requires = {
+      'nvim-tree/nvim-web-devicons', -- optional
+    },
+  }
+
   -- use {
   --   'mrcjkb/haskell-tools.nvim',
   --   requires = {

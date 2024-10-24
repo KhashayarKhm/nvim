@@ -22,6 +22,14 @@ return require('packer').startup(function(use)
   use 'stevearc/oil.nvim'
 
   use {
+    "antosha417/nvim-lsp-file-operations",
+    requires = {
+      "nvim-lua/plenary.nvim",
+      "nvim-tree/nvim-tree.lua",
+    }
+  }
+
+  use {
     'nvim-tree/nvim-tree.lua',
     requires = {
       'nvim-tree/nvim-web-devicons', -- optional

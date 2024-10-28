@@ -9,7 +9,7 @@ help:   ## shows this message
 #run with npm option
 .PHONY: install
 install: # install NeoVim and plugins
-	@sudo pacman -S neovim
-	@pnpm add -g prettierd
-	@git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
-	@nvim --headless -c "PackerInstall" -c "quit"
+	sudo pacman -S neovim
+	npm install -g @fsouza/prettierd
+	git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+	nvim --headless -c "PackerInstall" -c "quit"
